@@ -1,0 +1,74 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1552963654414" stop="1552963654538">
+  <name>test01</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1552963654414" status="passed" stop="1552963654419">
+      <name>Test01.test001</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="14756-MainThread"/>
+        <label name="host" value="X6-Pulas"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1552963654419" status="passed" stop="1552963654419">
+          <name>新增地址方法被执行</name>
+          <title>新增地址方法被执行</title>
+          <attachments>
+            <attachment source="84295018-6588-48c8-bd8f-48a13ee20d2e-attachment.txt" title="点击新增地址按钮" type="text/plain"/>
+            <attachment source="e1a63192-3f1f-49ec-bd90-def97628bcf8-attachment.txt" title="点击新增输入收件人：" type="text/plain"/>
+            <attachment source="8f212776-92fc-40a6-9415-c0b18ddb385f-attachment.txt" title="点击新增输入手机号：" type="text/plain"/>
+            <attachment source="6b611928-75fc-44e5-9b8f-9d80737c3427-attachment.txt" title="点击新增输入收货地址：" type="text/plain"/>
+            <attachment source="be9b1ea1-237a-4a94-bb6e-766e46d9bca6-attachment.txt" title="点击新增输入点击新增：" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1552963654425" status="passed" stop="1552963654427">
+      <name>Test01.test002</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="14756-MainThread"/>
+        <label name="host" value="X6-Pulas"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1552963654426" status="passed" stop="1552963654426">
+          <name>更新地址方法被执行</name>
+          <title>更新地址方法被执行</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1552963654427" status="failed" stop="1552963654538">
+      <name>Test01.test003</name>
+      <failure>
+        <message>FileNotFoundError: [Errno 2] No such file or directory: './image/faile.png'</message>
+        <stack-trace>self = &lt;test01.Test01 object at 0x044E1250&gt;
+
+    @pytest.allure.severity(pytest.allure.severity_level.BLOCKER)
+    def test003(self):
+        print("断言失败，截图并写入报告")
+&gt;       with open("./image/faile.png","rb")as f:
+E       FileNotFoundError: [Errno 2] No such file or directory: './image/faile.png'
+
+scripts\test01.py:30: FileNotFoundError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="blocker"/>
+        <label name="thread" value="14756-MainThread"/>
+        <label name="host" value="X6-Pulas"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
